@@ -1,0 +1,9 @@
+D:\Academico\2020-1\PDI\Proyectos\1 Imágenes Médicas
+\dcmtk\tools\dcmtk-3.6.5-win64-dynamic\bin
+
+Funciono:
+dcmtk\tools\dcmtk-3.6.5-win64-dynamic\bin\img2dcm Test\0.jpeg Test\0.dcm
+dcmtk/tools/dcmtk-3.6.5-win64-dynamic/bin/img2dcm Test/0.jpeg Test/0.dcm
+
+Test\0.jpeg
+Test\0.dcm

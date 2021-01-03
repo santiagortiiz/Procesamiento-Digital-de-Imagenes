@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImagenologiaMedica</class>
+ <widget class="QMainWindow" name="ImagenologiaMedica">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1401</width>
+    <height>663</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Imagenología Médica</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Imagenes y Simbolos/imagen_4.jpg</normaloff>Imagenes y Simbolos/imagen_4.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="InterfazGrafica">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="estaciones_de_la_App">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>1321</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="PlanosAnatomicos">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Imagenes y Simbolos/radiografia (1).png</normaloff>Imagenes y Simbolos/radiografia (1).png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Imagenes del estudio DICOM</string>
+     </attribute>
+     <widget class="QSlider" name="barridoSagital">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>420</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="barridoCoronal">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>420</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="sliderPosition">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="espacio_grafico_1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>1251</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>160</y>
+         <width>401</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;Imagenología Médica&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="botonCargarDicom">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cargar Carpeta DICOM</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/simbolo_cargar_archivo.png</normaloff>Imagenes y Simbolos/simbolo_cargar_archivo.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonRotarAxial">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>420</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</iconset>
+      </property>
+     </widget>
+     <widget class="QSlider" name="barridoAxial">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>420</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonRotarCoronal">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>420</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonRotarSagital">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>420</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</normaloff>Imagenes y Simbolos/simbolo_rotar_90.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guardar_1">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>420</y>
+        <width>110</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar Imagen</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/guardar.png</normaloff>Imagenes y Simbolos/guardar.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guardar_2">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>420</y>
+        <width>110</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar Imagen</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/guardar.png</normaloff>Imagenes y Simbolos/guardar.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guardar_3">
+      <property name="geometry">
+       <rect>
+        <x>1160</x>
+        <y>420</y>
+        <width>110</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar Imagen</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/guardar.png</normaloff>Imagenes y Simbolos/guardar.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>10</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;Planos Anatómicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1321</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagenes y Simbolos/imagen_1.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_28</zorder>
+     <zorder>barridoSagital</zorder>
+     <zorder>barridoCoronal</zorder>
+     <zorder>espacio_grafico_1</zorder>
+     <zorder>botonRotarAxial</zorder>
+     <zorder>barridoAxial</zorder>
+     <zorder>botonRotarCoronal</zorder>
+     <zorder>botonRotarSagital</zorder>
+     <zorder>guardar_1</zorder>
+     <zorder>guardar_2</zorder>
+     <zorder>guardar_3</zorder>
+     <zorder>label_12</zorder>
+     <zorder>botonCargarDicom</zorder>
+    </widget>
+    <widget class="QWidget" name="Metadatos">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Imagenes y Simbolos/metadato.png</normaloff>Imagenes y Simbolos/metadato.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Metadatos del estudio DICOM</string>
+     </attribute>
+     <widget class="QLineEdit" name="buscador_de_metadatos">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>100</y>
+        <width>531</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string extracomment="Escriba Aqui las palabras Clave">Escriba Aqui las palabras Clave</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="campo_metadatos">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>30</y>
+        <width>661</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>127</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>127</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>120</green>
+            <blue>215</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="campo_resultados_busqueda">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>531</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>127</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>127</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Highlight">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>120</green>
+            <blue>215</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Titulo_Buscador">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;Buscador de Metadatos Públicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1321</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagenes y Simbolos/n3.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_26</zorder>
+     <zorder>buscador_de_metadatos</zorder>
+     <zorder>campo_metadatos</zorder>
+     <zorder>campo_resultados_busqueda</zorder>
+     <zorder>Titulo_Buscador</zorder>
+    </widget>
+    <widget class="QWidget" name="JPEGaDICOM">
+     <attribute name="icon">
+      <iconset theme="Convertir">
+       <normaloff>Imagenes y Simbolos/convertir.png</normaloff>Imagenes y Simbolos/convertir.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Convertir JPEG a DICOM</string>
+     </attribute>
+     <widget class="QWidget" name="espacio_grafico_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>511</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonCargarJPEG">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cargar Imagen JPEG</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/cargar_imagen.png</normaloff>Imagenes y Simbolos/cargar_imagen.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonConvertirJPEG2DICOM">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Convertir a tipo DICOM</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Imagenes y Simbolos/traducir.png</normaloff>Imagenes y Simbolos/traducir.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_1">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>90</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>90</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Nombre de la Institución&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>130</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>130</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Dirección&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>170</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Descripción del estudio&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>210</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>210</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Nombre del Paciente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>250</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>250</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;ID del Paciente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>290</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>290</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Fecha de Nacimiento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>330</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>330</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Sexo del Paciente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>370</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>370</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Edad del Paciente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_9">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>410</y>
+        <width>350</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>410</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;Nombre Imagen .dcm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Titulo_Formulario">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>40</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;Formulario de Metadatos básicos DICOM &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1321</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Imagenes y Simbolos/imagen_11.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_27</zorder>
+     <zorder>espacio_grafico_2</zorder>
+     <zorder>botonCargarJPEG</zorder>
+     <zorder>botonConvertirJPEG2DICOM</zorder>
+     <zorder>lineEdit_1</zorder>
+     <zorder>label_2</zorder>
+     <zorder>lineEdit_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>lineEdit_3</zorder>
+     <zorder>label_4</zorder>
+     <zorder>lineEdit_4</zorder>
+     <zorder>label_5</zorder>
+     <zorder>lineEdit_5</zorder>
+     <zorder>label_6</zorder>
+     <zorder>lineEdit_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>lineEdit_7</zorder>
+     <zorder>label_8</zorder>
+     <zorder>lineEdit_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>lineEdit_9</zorder>
+     <zorder>label_10</zorder>
+     <zorder>Titulo_Formulario</zorder>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="fondo_1">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>0</y>
+      <width>1401</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes y Simbolos/imagen_1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1401</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes y Simbolos/n3.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1391</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes y Simbolos/imagen_11.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Comenzar">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>300</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Comenzamos Doctor?</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Imagenes y Simbolos/comenzar.png</normaloff>Imagenes y Simbolos/comenzar.png</iconset>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="estadoPaciente">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>60</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Todo bajo control</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Un descansito doctor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Todo un exito, salir</string>
+     </property>
+    </item>
+   </widget>
+   <zorder>fondo_2</zorder>
+   <zorder>fondo_3</zorder>
+   <zorder>fondo_1</zorder>
+   <zorder>estaciones_de_la_App</zorder>
+   <zorder>estadoPaciente</zorder>
+   <zorder>Comenzar</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>botonCargarDicom</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>cargar_DICOM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonRotarAxial</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>rotar_vista_axial()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonRotarCoronal</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>rotar_vista_coronal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>487</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonRotarSagital</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>rotar_vista_sagital()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>914</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>896</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>barridoAxial</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>barrido_axial()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>576</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>barridoCoronal</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>barrido_coronal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>686</x>
+     <y>572</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>690</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>barridoSagital</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>barrido_sagital()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1031</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1033</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buscador_de_metadatos</sender>
+   <signal>returnPressed()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>buscar_metadatos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>guardar_1</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>guardar_vista_axial()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>guardar_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>guardar_vista_coronal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>818</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>795</x>
+     <y>497</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>guardar_3</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>guardar_vista_sagital()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1219</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1214</x>
+     <y>495</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonCargarJPEG</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>cargar_imagen_jpeg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonConvertirJPEG2DICOM</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>convertir_jpeg_a_DICOM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Comenzar</sender>
+   <signal>clicked()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>comenzar_aplicacion()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>801</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>829</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>estaciones_de_la_App</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>cambio_de_estacion()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botonCargarDicom</sender>
+   <signal>pressed()</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>ocultar_objetos_estacion_1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>estadoPaciente</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>ImagenologiaMedica</receiver>
+   <slot>continuar_pausar_aplicacion()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1198</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1227</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>cargar_DICOM()</slot>
+  <slot>rotar_vista_axial()</slot>
+  <slot>rotar_vista_coronal()</slot>
+  <slot>rotar_vista_sagital()</slot>
+  <slot>barrido_axial()</slot>
+  <slot>barrido_coronal()</slot>
+  <slot>barrido_sagital()</slot>
+  <slot>enlazar_vistas()</slot>
+  <slot>mostrar_metadatos()</slot>
+  <slot>buscar_metadatos()</slot>
+  <slot>guardar_vista_axial()</slot>
+  <slot>guardar_vista_coronal()</slot>
+  <slot>guardar_vista_sagital()</slot>
+  <slot>cargar_imagen_jpeg()</slot>
+  <slot>convertir_jpeg_a_DICOM()</slot>
+  <slot>comenzar_aplicacion()</slot>
+  <slot>cambio_de_estacion()</slot>
+  <slot>continuar_pausar_aplicacion()</slot>
+ </slots>
+</ui>
