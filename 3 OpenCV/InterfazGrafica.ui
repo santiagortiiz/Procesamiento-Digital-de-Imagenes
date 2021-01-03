@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1359</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Fondos e Iconos/10.jpeg</normaloff>Fondos e Iconos/10.jpeg</iconset>
+  </property>
+  <widget class="QWidget" name="InterfazGrafica">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QPushButton" name="boton_activar_camara">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>570</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Activar Camara</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Fondos e Iconos/b.png</normaloff>Fondos e Iconos/b.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_apagar_camara">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>570</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apagar Camara</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Fondos e Iconos/c.png</normaloff>Fondos e Iconos/c.png</iconset>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>30</y>
+      <width>661</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Fondos e Iconos/g.png</normaloff>Fondos e Iconos/g.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>imagen procesada</string>
+     </attribute>
+     <widget class="QGraphicsView" name="espacio_grafico_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Fondos e Iconos/i.png</normaloff>Fondos e Iconos/i.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Histograma procesado</string>
+     </attribute>
+     <widget class="PlotWidget" name="espacio_grafico_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="backgroundBrush">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Fondos e Iconos/j.png</normaloff>Fondos e Iconos/j.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Movimiento</string>
+     </attribute>
+     <widget class="QGraphicsView" name="espacio_grafico_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_gamma">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>570</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="decimals">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>2.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="value">
+     <double>0.500000000000000</double>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_gamma">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>570</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_color">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>570</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Rojo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Verde</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Azul</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_extraer_color">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>590</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_ecualizar_color">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>610</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>661</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Fondos e Iconos/e.png</normaloff>Fondos e Iconos/e.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Camara</string>
+     </attribute>
+     <widget class="QGraphicsView" name="espacio_grafico_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>Fondos e Iconos/i.png</normaloff>Fondos e Iconos/i.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Histograma</string>
+     </attribute>
+     <widget class="PlotWidget" name="espacio_grafico_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="backgroundBrush">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_test">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>One Shot</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Fondos e Iconos/a.png</normaloff>Fondos e Iconos/a.png</iconset>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_binarizar">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>590</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Binarizar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THRESH_BINARY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THRESH_BINARY_INV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THRESH_TRUNC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THRESH_TOZERO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THRESH_TOZERO_INV</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_umbral">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>590</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="decimals">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <double>255.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>5.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_iteraciones">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>610</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_transformacion_morfologica">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>610</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Transf. Morfologica</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>erosionar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dilatar</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>apertura</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>cierre</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_contornos">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>570</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_contorno">
+    <property name="geometry">
+     <rect>
+      <x>1311</x>
+      <y>592</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_ajustar_parametros">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>570</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Configuracion Recomendada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Marcador Blanco</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Marcador Negro</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_histograma">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>600</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Histograma RGB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Histograma Rojo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Histograma Verde</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Histograma Azul</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>590</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Indice del contorno&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#ffffff;&quot;&gt;Visión por Computadora&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;Nota: Apague la camara antes de cerrar la aplicacion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Fondo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1361</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Fondos e Iconos/10.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>570</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Identificar Contornos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>570</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;Correccion Gamma&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>590</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;Extraer color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>610</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;Ecualizar color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>Fondo</zorder>
+   <zorder>boton_activar_camara</zorder>
+   <zorder>boton_apagar_camara</zorder>
+   <zorder>tabWidget_2</zorder>
+   <zorder>doubleSpinBox_gamma</zorder>
+   <zorder>checkBox_gamma</zorder>
+   <zorder>comboBox_color</zorder>
+   <zorder>checkBox_extraer_color</zorder>
+   <zorder>checkBox_ecualizar_color</zorder>
+   <zorder>tabWidget_1</zorder>
+   <zorder>pushButton_test</zorder>
+   <zorder>comboBox_binarizar</zorder>
+   <zorder>doubleSpinBox_umbral</zorder>
+   <zorder>spinBox_iteraciones</zorder>
+   <zorder>comboBox_transformacion_morfologica</zorder>
+   <zorder>checkBox_contornos</zorder>
+   <zorder>spinBox_contorno</zorder>
+   <zorder>comboBox_ajustar_parametros</zorder>
+   <zorder>comboBox_histograma</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>boton_activar_camara</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>activar_camara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boton_apagar_camara</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>apagar_camara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_test</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>94</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_ajustar_parametros</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ajustar_parametros()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1259</x>
+     <y>647</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1274</x>
+     <y>647</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>activar_camara()</slot>
+  <slot>apagar_camara()</slot>
+  <slot>test()</slot>
+  <slot>limpiar_marcador()</slot>
+  <slot>ajustar_parametros()</slot>
+ </slots>
+</ui>
